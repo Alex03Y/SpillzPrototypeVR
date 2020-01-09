@@ -1,0 +1,20 @@
+{
+    "name": "Spillz",
+    "references": [
+        "GUID:612108aa77b994b6d9417f7da27c88b1",
+        "GUID:7d538cb6225ec4041a0c6c08f524264a",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:098554ced12cc4dfba261a0d8e0340cc",
+        "GUID:3b40c8be394e8426eb3e3d1315e36a02"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
