@@ -13,7 +13,7 @@ namespace ProjectCore.Configs
         public Type ServiceType => typeof(ProjectConfiguration);
         
 #if UNITY_EDITOR
-        private const string CompanyName = "CoffeeVR";
+        private const string CompanyName = "TeamVR";
         
         [BoxGroup("Build")] public string GameName = "Untitled";
         [BoxGroup("Build")] public string BuildName = "Untitled";

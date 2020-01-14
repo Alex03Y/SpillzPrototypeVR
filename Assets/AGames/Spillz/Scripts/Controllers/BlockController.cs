@@ -1,6 +1,7 @@
-﻿using ProjectCore.Misc;
+﻿using AGames.Spillz.Scripts.Other;
+using ProjectCore.Misc;
 
-namespace AGames.Spillz.Scripts.Other
+namespace AGames.Spillz.Scripts.Controllers
 {
     public class BlockController : CachedBehaviour
     {

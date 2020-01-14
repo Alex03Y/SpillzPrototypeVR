@@ -4,20 +4,23 @@ using ProjectCore.Input;
 using ProjectCore.Misc;
 using ProjectCore.ServiceLocator;
 
-public class LevelController : CachedBehaviour, IInputReceiver<LevelControlArgs>
+namespace AGames.Spillz.Scripts.Controllers
 {
-    private InputManager _inputManager;
-    private ManagerLevel _managerLevel;
-    private void Start()
+    public class LevelController : CachedBehaviour, IInputReceiver<LevelControlArgs>
     {
-        _inputManager = ServiceLocator.Resolve<InputManager>();
-        _inputManager.Subscribe(new InputReceiver<LevelControlArgs>(this));
-        _managerLevel = ServiceLocator.Resolve<ManagerLevel>();
-    }
+        private InputManager _inputManager;
+        private ManagerLevel _managerLevel;
+        private void Start()
+        {
+            _inputManager = ServiceLocator.Resolve<InputManager>();
+            _inputManager.Subscribe(new InputReceiver<LevelControlArgs>(this));
+            _managerLevel = ServiceLocator.Resolve<ManagerLevel>();
+        }
 
-    public void Execute(LevelControlArgs args)
-    {
-        if (args.NextLevel) _managerLevel.NextLevel();
-        if (args.RestartLevel) _managerLevel.RestartLevel();
+        public void Execute(LevelControlArgs args)
+        {
+            if (args.NextLevel) _managerLevel.NextLevel();
+            if (args.RestartLevel) _managerLevel.RestartLevel();
+        }
     }
 }

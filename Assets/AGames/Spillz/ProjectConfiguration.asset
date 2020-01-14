@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f92f1370824a47a63e8ffc7c06b2ca, type: 3}
   m_Name: ProjectConfiguration
   m_EditorClassIdentifier: 
-  GameName: Spillz
-  BuildName: SpillzPrototype
+  GameName: SpillzVR
+  BuildName: PrototypeSpillzVR
   Version: 0.1
   BundleVersion: 1
   BuildScenes:

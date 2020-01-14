@@ -2,7 +2,7 @@
 using ProjectCore.ServiceLocator;
 using UnityEngine;
 
-namespace AGames.Spillz.Scripts.Other
+namespace AGames.Spillz.Scripts.UI
 {
     public class ChangeCameraForCanvas : MonoBehaviour
     {

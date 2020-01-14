@@ -1,7 +1,7 @@
 ﻿using ProjectCore.Misc;
 using UnityEngine;
 
-namespace AGames.Spillz.Scripts
+namespace AGames.Spillz.Scripts.Other
 {
     public class RbCenterOfMass : CachedBehaviour
     {

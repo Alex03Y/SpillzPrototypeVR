@@ -43,8 +43,8 @@ namespace AGames.Spillz.Scripts.Manager
 //        [SerializeField] private ManagerLevel _levelManager;
 //        public ManagerLevel LevelManager => _levelManager;
 
-        [SerializeField] private TowerRotateController _rotationController;
-        public TowerRotateController RotationController => _rotationController;
+        [SerializeField] private TowerControllerForRotation _rotationControllerForRotation;
+        public TowerControllerForRotation RotationControllerForRotation => RotationControllerForRotation;
 
         [SerializeField] private AnimationCurve _animationCurveFrequency;
         public AnimationCurve AnimationCurveFrequency => _animationCurveFrequency;

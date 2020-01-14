@@ -264,7 +264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462249134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.121, z: 0}
+  m_LocalPosition: {x: 0, y: 1.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -649,7 +649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &680092932
 Transform:
   m_ObjectHideFlags: 0
@@ -662,6 +662,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 945665843}
+  - {fileID: 776743802}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -761,12 +762,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776743799}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.48, y: 0.95, z: -13.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 680092932}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &798759512
 PrefabInstance:
@@ -1246,9 +1247,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 945665842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 107297431f4e7894ea17bfcebcdaa224, type: 3}
+  m_Script: {fileID: 11500000, guid: 732b0faeac1974bba8a1e461879cb036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GroupSampling: 1
+  SampleSize: 20
+  TargetText: {fileID: 1179158543}
+  UpdateTextEvery: 1
+  MaxTextLength: 5
+  Smoothed: 1
+  ForceIntResult: 1
+  ZeroAllocOnly: 0
+  UseSystemTick: 0
+  UseColors: 1
+  Good: {r: 0, g: 1, b: 0, a: 1}
+  Okay: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  Bad: {r: 1, g: 0, b: 0, a: 1}
+  OkayBelow: 70
+  BadBelow: 30
 --- !u!114 &945665845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,7 +1685,7 @@ MonoBehaviour:
   _pointRightToRay: {fileID: 1752120305}
   _pointLeftToRay: {fileID: 1858307930}
   _coolDown: 0.5
-  _rotationController: {fileID: 1906241981}
+  _rotationControllerForRotation: {fileID: 0}
   _animationCurveFrequency:
     serializedVersion: 2
     m_Curve:
@@ -2245,6 +2261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df83fab6beb80420db52615bde405391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _instanceId: 0
+  _gameManager: {fileID: 0}
+  _tagName: 
 --- !u!65 &1858307932
 BoxCollider:
   m_ObjectHideFlags: 0

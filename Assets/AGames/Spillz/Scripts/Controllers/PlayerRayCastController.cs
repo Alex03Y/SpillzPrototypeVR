@@ -1,6 +1,5 @@
 ﻿using AGames.Spillz.Scripts.Input.InputProcessors;
 using AGames.Spillz.Scripts.Manager;
-using AGames.Spillz.Scripts.Other;
 using ProjectCore.Input;
 using ProjectCore.Misc;
 using ProjectCore.ServiceLocator;

@@ -3,7 +3,7 @@ using ProjectCore.Misc;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace AGames.Spillz.Scripts
+namespace AGames.Spillz.Scripts.Other
 {
     public class InstanceBalls : CachedBehaviour
     {

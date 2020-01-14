@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace AGames.Spillz.Scripts.Controllers
 {
-    public class TowerRotateController : CachedBehaviour
+    public class TowerControllerForRotation : CachedBehaviour
     {
         private Rigidbody[] _rigidbodies;
 

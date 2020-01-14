@@ -9,13 +9,13 @@ namespace AGames.Spillz.Scripts.Input.InputProcessors
     public class RotationArgs : IInputArgs
     {
         public float Rotation { get; private set; }
-        public readonly TowerRotateController Target;
+        public readonly TowerControllerForRotation Target;
         private GameManager _gameManager;
 
         public RotationArgs()
         {
             _gameManager = ServiceLocator.Resolve<GameManager>();
-            Target = _gameManager.RotationController;
+            Target = _gameManager.RotationControllerForRotation;
         }
 
         public void SetRotate(float rotation)
